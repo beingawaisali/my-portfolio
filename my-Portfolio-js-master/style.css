@@ -1,0 +1,588 @@
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+/* HEADER TOP */
+
+#header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 4%;
+}
+#logo-purple{
+    display: none;
+}
+#logo-skyblue{
+    display: none;
+}
+
+
+.header-inner{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    /* align-items: center; */
+}
+.header-inner img{
+    width: 80px;
+    height: 56px;
+}
+.header-inner>ul li{
+    float: left;
+    list-style-type: none;
+    padding: 7px;
+    display: inline-block;
+    transition: 1s;
+}
+.header-inner>ul li a{
+    text-decoration: none;
+    color: #868585;
+    font-size: 1.1em;
+}
+.header-inner>ul li a:hover{
+    color: #0669b2;
+    transition: 0.5s;
+}
+/* .header-inner>ul li:nth-child(4){
+    border: 2px solid #0669b2;
+    border-radius: 20px;
+    margin-left: 10px;
+} */
+/* .header-inner>ul li:nth-child(4) a{
+    color: #0669b2;
+} */
+.header-inner>ul li:nth-child(4):hover{
+    background-color:#0669b2;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.header-inner>ul li:nth-child(4):hover a{
+    color: white;
+    transition: 0.5s;
+}
+#montorship button{
+    background: none;
+    color: #868585;
+    border: 2px solid #0669b2;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 1s;
+}
+#montorship button:hover{
+    background-color: #0669b2;
+    color: #ffffff;
+    transition: 1s;
+}
+
+#montorship{
+    /* padding: 10px 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+
+#menu-bar{
+    display: none;
+}
+
+/* HEADER BOTTOM */
+
+.header-bottom-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-bottom-inner:nth-child(1) img{
+    width: 225px;
+    padding: 60px 0px;
+}
+.header-bottom-inner:nth-child(3) img{
+    width: 640px;
+    padding: 40px 0px;
+    padding-bottom: 0px;
+}
+#resume-button{
+    border: 2px solid #0669b2;
+    border-radius: 20px;
+    margin-left: 10px;
+    color: #0669b2;
+    height: 40px;
+    width: 120px;
+    background-color: white;
+    font-size: 1.1em;
+    transition: 1s;
+}
+#resume-button:hover{
+    background-color:#0669b2;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+#header-bottom-inner-text{
+    text-align: center;
+}
+#header-bottom-inner-text p{
+    color: #868585;
+}
+
+/* JOURNEY SECTION */
+
+#my-journey{
+    background-color: #0669b2;
+    height: 400px;
+    padding: 10vh 5%;
+    color: white;
+    text-align: center;
+    padding-bottom: 80px;
+}
+#my-journey h1{
+    padding: 50px 0px;
+    font-size: 1.8em;
+}
+#my-journey p{
+    word-spacing: 1px;
+    line-height: 25px;
+}
+
+/* SERVICES SECTION */
+
+#services{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+#services-inner{
+    width: 80%;
+    background-color: white;
+    border: 2px solid #e6ecf8;
+    /* height: 400px; */
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    border-radius: 20px;
+    /* box-shadow: 10px 5px #868585; */
+}
+.services-div{
+    text-align: center;
+    padding: 10px;
+}
+.services-inner-1{
+    height: 200px;
+}
+.services-inner-1 i{
+    font-size: 4em;
+    cursor: pointer;
+    transition: 500ms;
+    color: #0669b2;
+    margin: 20px 0px;
+}
+.services-inner-1 i:hover{
+    transition: 500ms;
+    color: black;
+}
+.services-inner-2{
+    height: 140px;
+}
+.services-inner-3 p:hover{
+    color: #0669b2;
+    cursor: pointer;
+}
+.services-div h2{
+    padding-bottom: ;
+}
+.services-div p{
+    color: #868585;
+    letter-spacing: 1px;
+    padding-bottom: 30px
+}
+#services h4{
+    color: #0669b2;
+}
+
+.services-inner-3 p{
+    padding: 0px;
+}
+
+
+/* PORTFOLIO SECTION */
+
+#portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #e6ecf8;
+}
+
+#portfolio-inner-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    color: #0669b2;
+}
+#portfolio-inner-1 p{
+    color: #4c4c4c;
+}
+#portfolio-inner-1 a{
+    color: #0669b2;
+    text-decoration: none;
+    font-weight: 600;
+}
+#portfolio-inner-2{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-row-gap: 1em;
+    justify-items: center;
+}
+.projects-list img{
+    border-radius: 14px;
+    transition: 1s;
+}
+.projects-list img:hover{
+    border-radius: 14px;
+    filter: blur(1px);
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #868585;
+    transition: 0.5s;
+}
+
+#portfolio-more{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio-more button{
+    width: 300px;
+    height: 50px;
+    font-size: 1.1em;
+    background-color: white;
+    border: 2px solid #0669b2;
+    color: #0669b2;
+    border-radius: 40px;
+    transition: 1s;
+}
+#portfolio-more button:hover{
+    background-color: #0669b2;
+    color: white;
+    transition: 1s;
+}
+
+/* COLLABORATIONS */
+
+#collabs-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0669b2;
+    height: 200px;
+
+}
+
+#companies-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row-gap: 6em;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+}
+.companies-list{
+    transition: 1s;
+}
+.companies-list:hover{
+    box-shadow: 0px 0px 5px #293347;
+    cursor: pointer;
+    transition: 1s;
+}
+#collabs-button h2{
+    color: #0669b2;
+}
+#collabs-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+#collabs-button p{
+    color: #4c4c4c
+}
+#collabs-button button{
+    width: 250px;
+    height: 50px;
+    font-size: 1.1em;
+    background-color: white;
+    border: 2px solid #0669b2;
+    color: #0669b2;
+    border-radius: 40px;
+    margin: 30px 0px;
+    transition: 1s;
+}
+#collabs-button button:hover{
+    background-color: #0669b2;
+    color: white;
+    transition: 1s;
+}
+
+/* MENTOR SECTION */
+
+#mentors{
+    height: 600px;
+}
+.mentors-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mentors-inner:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+.mentors-inner>div{
+    width: 85%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+.mentors-inner h2{
+    color: #0669b2;
+}
+.mentors-inner p{
+    color: #4c4c4c;
+}
+.mentors-inner span{
+    color: #4c4c4c;
+    font-size: 0.9em;
+}
+.mentors-inner button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 25px 0px;
+    background-color: white;
+    border: 2px solid #e6ecf8;
+    transition: 1s;
+}
+.mentors-inner button:hover{
+    border: 2px solid #0669b2;
+    transition: 1s;
+}
+.mentors-inner button:nth-child(1){
+    background-color: #0669b2;
+}
+.mentors-inner:nth-child(2){
+    height: 330px;
+}
+#miss-sarah{
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+#miss-sarah:hover{
+    border-radius: 0%;
+    transition: 1s;
+}
+
+
+/* FOOTER */
+
+#footer-top-mian{
+    display: flex;
+    justify-content: center;
+}
+
+#footer-top{
+    width: 85%;
+    height: ;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #293347;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-content: center;
+    justify-items: center;
+}
+#footer-top div{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer-top h2{
+    color: white;
+}
+#footer-top p{
+    color: #f4f4f5;
+}
+#footer-top button{
+    width: 250px;
+    height: 50px;
+    font-size: 1.1em;
+    background-color: #293347;
+    border: 2px solid #0669b2;
+    color: white;
+    border-radius: 40px;
+    margin: 30px 0px;
+    transition: 1s;
+}
+#footer-top button:hover{
+    background-color: #0669b2;
+    transition: 1s;
+}
+
+#footer{
+    width: 100%;
+    height: 500px;
+    background-color: #0669b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -60px;
+}
+#footer-inner-1{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 275px;
+    text-align: center;
+    color: #dcc6ff;
+}
+#footer-inner-2{
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+#footer-inner-2 button{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #0669b2;
+    border: 1px solid #dcc6ff;
+    transition: 1s;
+}
+#footer-inner-2 button i{
+    color: white;
+    transition: 1s;
+}
+#footer-inner-2 button:hover i{
+    background-color: white;
+    color: #0669b2;
+    transition: 1s;
+}
+#footer-inner-2 button:hover{
+    background-color: #ffffff;
+    color: #0669b2;
+    transition: 1s;
+}
+#footer-inner-3{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:300px) and (max-width:640px){
+
+    #devices-image{
+        width: 90%;
+    }
+
+    /* HEADER */
+
+    .header-inner>ul li{
+        display: none;
+    }
+    #menu-bar{
+        display: inline-block;
+        font-size: 3em;
+    }
+    #menus{
+        display: none;
+    }
+
+    /* MY JOURNEY */
+
+    #my-journey{
+        height: 500px;
+    }
+    #my-journey h1{
+        padding: 0px 0px;
+    }
+
+    /* SERVICES */
+    #services-inner{
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    }
+
+    /* PORTFOLIO */
+    #portfolio-inner-2{
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        justify-items: center;
+    }
+    .projects-list img{
+        width: 290px
+    }
+    #portfolio-inner-1 p{
+        font-size: 0.7em;
+    }
+
+    /* COLLABS */
+    #collabs-button p{
+        font-size: 0.9em;
+    }
+    #collabs-button h2{
+        font-size: 1em;
+    }
+    #collabs-text h3{
+        font-size: 0.8em;
+    }
+
+    /* MENTORSHIP */
+    #montorship{
+        display: none;
+    }
+
+    /* FOOTER */
+    #footer-inner-2{
+        margin: 50px 0px;
+    }
+    #footer-inner-2 button{
+        margin: 2px;
+    }
+}
