@@ -4,4 +4,4 @@
 
 Repo link
 
-https://awais-malik716.github.io/my-Portfolio-js/
+https://awais-malik716.github.io/my-portfolio/
