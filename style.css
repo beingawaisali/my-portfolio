@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0px;
     font-family: 'Poppins', sans-serif;
@@ -6,6 +10,10 @@ body{
 button{
     outline: none;
     cursor: pointer;
+}
+
+p{
+    text-align: center;
 }
 
 /* HEADER TOP */
@@ -67,25 +75,23 @@ button{
     color: white;
     transition: 0.5s;
 }
-#montorship button{
+#mentorship-btn{
     background: none;
     color: #868585;
     border: 2px solid #0669b2;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-left: 10px;
     padding: 6px 14px;
     cursor: pointer;
     font-size: 1.1em;
     transition: 1s;
+    padding: 9px 13px;;
+
 }
-#montorship button:hover{
+#mentorship-btn:hover{
     background-color: #0669b2;
     color: #ffffff;
     transition: 1s;
-}
-
-#montorship{
-    padding: 10px 0px;
 }
 
 
@@ -181,8 +187,9 @@ button{
     height: 200px;
 }
 .services-inner-1 i{
-    font-size: 4em;
+    font-size: 5em;
     color: #0669b2;
+    padding: 15px 0px;
 }
 .services-inner-2{
     height: 140px;
@@ -192,7 +199,7 @@ button{
     cursor: pointer;
 }
 .services-div h2{
-    padding-bottom: ;
+    padding-bottom: 10px 0px;
 }
 .services-div p{
     color: #868585;
@@ -204,7 +211,7 @@ button{
 }
 
 .services-inner-3 p{
-    padding: 0px;
+    padding: 5px;
 }
 
 
@@ -482,6 +489,8 @@ button{
 }
 #footer-inner-2 button:hover{
     background-color: #ffffff;
+}
+#footer-inner-2 button:hover i{
     color: #0669b2;
     transition: 1s;
 }
@@ -511,10 +520,13 @@ button{
         display: none;
     }
     #menu-bar{
-        display: inline-block;
-        font-size: 3em;
+        display: inline;
+        font-size: 2em;
     }
     #menus{
+        display: none;
+    }
+    #mentorship-btn{
         display: none;
     }
 
